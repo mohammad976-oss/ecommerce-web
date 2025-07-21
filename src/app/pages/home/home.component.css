@@ -1,0 +1,93 @@
+.about-summary {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 700px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.about-electromart {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-electromart h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.about-electromart p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.feature-box {
+  flex: 1 1 calc(25% - 16px); /* 4 per row */
+  min-width: 220px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .feature-box {
+    flex: 1 1 calc(33.33% - 16px); /* 3 per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-box {
+    flex: 1 1 calc(50% - 16px); /* 2 per row on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-box {
+    flex: 1 1 100%; /* full width on small screens */
+  }
+}
+.quote-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.quote-footer blockquote {
+  margin: 0;
+  padding: 0;
+}
+.product-tip {
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  margin: 30px 0;
+  font-style: italic;
+}
+

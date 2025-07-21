@@ -1,0 +1,18 @@
+<h2 class="section-title">🛍️ Products</h2>
+<div class="product-grid">
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name" />
+    <h3>{{ product.name }}</h3>
+    <p class="price">{{ product.price }}</p>
+
+    <label for="quantity">Qty:</label>
+    <select [(ngModel)]="product.quantity" class="quantity-select">
+      <option *ngFor="let qty of [1,2,3,4,5]" [value]="qty">{{ qty }}</option>
+    </select>
+
+    <button (click)="addToCart(product)">Add to Cart</button>
+  </div>
+</div>
+<p class="contact-tip">
+  📞 Need our contact details or address? Just scroll up and click on the <strong>Contact</strong> section to reach out to us anytime.
+</p>
